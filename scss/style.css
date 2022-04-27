@@ -297,8 +297,41 @@ header #div-header .download-button:hover {
   opacity: 80%;
 }
 
-footer {
+#team {
   background-color: #252525;
+  color: white;
+}
+#team h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#team .div-content {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#team a:hover {
+  color: #7046E7;
+}
+#team .each-content {
+  padding: 15px;
+  text-align: center;
+  width: 40%;
+  min-width: 200px;
+}
+#team .each-content p {
+  text-align: center;
+}
+#team i {
+  margin-bottom: 20px;
+  font-size: 60px !important;
+}
+
+footer {
+  background-color: #131313;
   display: inline-block;
   width: auto;
   text-align: center;

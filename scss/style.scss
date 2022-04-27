@@ -323,10 +323,50 @@ header{
 }
 
 
+// ABOUT 
+#team{
+  background-color:$medium-gray;
+  color: $white;
+  h2{
+    text-align:center;
+    margin-bottom: 60px;
+  }
+  
+  .div-content{
+    text-align:center;
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  a{
+    &:hover{
+      color: $color-primary;
+    }
+  }
+  .each-content{
+    padding: 15px;
+    text-align: center;
+    width: 40%;
+    min-width: 200px;
+    p{
+        text-align: center;
+    }
+  }
+
+  i{
+    margin-bottom: 20px;
+    font-size:60px !important;
+  }
+
+}
+
+
 
 // FOOTER
 footer{
-  background-color: $medium-gray;
+  background-color: $dark-gray;
   display:inline-block;
   width:auto;
   text-align:center;
