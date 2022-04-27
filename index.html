@@ -20,65 +20,64 @@
 <!-- Nav -->
 <div id="nav">
     <a href="#home" class="nav-button">LOGO</a>
-    <!-- Right-sided navbar links -->
     <div class="right">
       <a href="#about" class="nav-button">ABOUT</a>
-      <a href="#team" class="nav-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="nav-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="nav-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="nav-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#team" class="nav-button">FONCTIONNALITES</a>
+      <a href="#work" class="nav-button">PLUS</a>
     </div>
 
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="show()">
       <i class="fa fa-bars"></i>
     </a>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="sidebar">
+  <a href="javascript:void(0)" onclick="hide()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="hide()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="hide()" class="w3-bar-item w3-button">FONCTIONNALITES</a>
+  <a href="#work" onclick="hide()" class="w3-bar-item w3-button">PLUS</a>
 </nav>
+
+
+
+
 
 <!-- Header with full-height image -->
 <header id="home">
   <div id="div-header">
     <p class="p-big">DokiBoti</p><br>
     <p class="p-small">Le bot discord qui simplifie la vie d'enseignant et d'étudiant !</p>
-    <p><a href="#about" class="home-button">Ajouter à mon serveur</a></p>
+    <p><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
   </div> 
 </header>
 
 <!-- ABOUT -->
 <div class="container" id="about">
   <h3>ABOUT THE COMPANY</h3>
-  <div class="div-about">
+  <div class="div-content">
 
-    <div class="each-about">
+    <div class="each-content">
       <i class="fa fa-desktop"></i>
       <p class="w3-large">Responsive</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
 
-    <div class="each-about">
+    <div class="each-content">
       <i class="fa fa-heart"></i>
       <p class="w3-large">Passion</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
 
-    <div class="each-about">
+    <div class="each-content">
       <i class="fa fa-diamond"></i>
       <p class="w3-large">Design</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
 
-    <div class="each-about">
+    <div class="each-content">
       <i class="fa fa-cog"></i>
       <p class="w3-large">Support</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -91,34 +90,77 @@
 <!-- OTHER -->
 <div class="container" id="other">
 
-    <div class="div-other">
+  <div class="div-other">
+
+      <div class="each-content">
+          <h3>ABOUT OTHER</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
+      </div>
   
-        <div class="each-other">
-            <h3>ABOUT OTHER</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <p><a href="#about" class="home-button">Ajouter à mon serveur</a></p>
-        </div>
-    
-        <div class="each-other-img">
-                <img src="img/505625.jpg" alt="Discord" >
-        </div>
+      <div class="each-content-img">
+              <img src="img/505625.jpg" alt="Discord" >
+      </div>
+  </div>
+</div>
+
+
+<!-- FONCTIONS -->
+<div class="container" id="fonctions">
+  <h3>FONCTIONNALITES</h3>
+  <div class="div-content">
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </div>
- </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="each-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+  </div>
+  <!--
+  <p class="center"><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
+  -->
+</div>
+
+
+  <!-- DOWNLOAD -->
+<div id="download">
+  <p class="large">Ajoutez le maintenant à votre serveur</p>
+  <p><a href="#about" class="download-button">Télécharger</a></p>
+</div>
 
 
  <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
+<footer>
+    <p><b>DokiBoti</b></p><br>
+    <p>By Rayan Idri, Thibaut François, Joanne Massilon, Enas EL Mershati</p>
+</footer>
 
 
 
@@ -385,9 +427,9 @@ function onClick(element) {
 
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+var mySidebar = document.getElementById("sidebar");
 
-function w3_open() {
+function show() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
   } else {
@@ -396,7 +438,7 @@ function w3_open() {
 }
 
 // Close the sidebar with the close button
-function w3_close() {
+function hide() {
     mySidebar.style.display = "none";
 }
 </script>

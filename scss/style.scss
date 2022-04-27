@@ -6,22 +6,11 @@
   padding: 0;
 }
 
-html{
+html, body{
   scroll-behavior: smooth;
   background-color: rgb(56, 56, 56);
-}
-
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Raleway", sans-serif
-}
-
-body, html {
   height: 100%;
-  line-height: 1.8;
 }
-
-
-
 
 a{
   text-decoration:none;
@@ -86,7 +75,7 @@ header{
     }
     
 
-    .home-button{
+    .download-button{
       display:inline-block;
       cursor:pointer;
       padding:12px 24px;
@@ -106,7 +95,10 @@ header{
 
 
 .container{
-  padding:100px 20px;
+  padding:100px 100px;
+  @include medium{
+    padding: 50px 0px;
+  }
 }
 
 // ABOUT 
@@ -118,7 +110,7 @@ header{
     margin-bottom: 60px;
   }
   
-  .div-about{
+  .div-content{
     text-align:center;
     display: flex;
     margin: 0 auto;
@@ -127,7 +119,7 @@ header{
     justify-content: center;
   }
 
-  .each-about{
+  .each-content{
     padding: 15px;
     text-align: center;
     width: 20%;
@@ -145,6 +137,51 @@ header{
 }
 
 
+// FONCTIONS 
+#fonctions{
+  background-color:rgb(49, 49, 49);
+  color: white;
+  h3{
+    text-align:center;
+    margin-bottom: 60px;
+  }
+  
+  .div-content{
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .each-content{
+    padding: 15px;
+    width: 15%;
+    min-width: 200px;
+    border-bottom: 2px solid rgb(83, 83, 83);
+  }
+
+  .center{
+    justify-content: center;
+    text-align: center;
+  }
+  /*
+  .download-button{
+    cursor:pointer;
+    padding:12px 20px;
+    background-color: #7046E7;
+    border-radius: 10px;
+    &:hover{
+      opacity: 80%;
+    }
+  }
+  */
+
+}
+
+
+
 #other{
   .div-other{
     display: flex;
@@ -154,16 +191,20 @@ header{
     justify-content: center;
   }
 
-  .each-other{
+  .each-content{
     padding: 15px;
     width: 40%;
     min-width: 200px;
+
+    @include small{
+      width: 100%;
+    }
 
     :nth-of-type(1){
       margin: 20px 0px;
     }
   }
-  .each-other-img{
+  .each-content-img{
     padding: 15px;
     text-align: center;
     width: 40%;
@@ -173,12 +214,15 @@ header{
       height:auto;
       border-radius: 10px;
     }
+    @include small{
+      display: none;
+    }
   }
 
-  .home-button{
+  .download-button{
     display:inline-block;
     cursor:pointer;
-    padding:8px 16px;
+    padding:12px 20px;
     margin-top: 8px;
     background-color: #7046E7;
     border-radius: 10px;
@@ -187,4 +231,43 @@ header{
     }
   }
 
+}
+
+
+// FOOTER
+footer{
+  background-color: black;
+  display:inline-block;
+  width:auto;
+  text-align:center;
+  padding: 60px 0px;
+  width: 100%;
+  color: white;
+}
+
+// DOWNLOAD
+#download{
+  background-color: rgb(116, 116, 116);
+  width:auto;
+  text-align:center;
+  padding: 80px 0px;
+  width: 100%;
+  color: white;
+
+  .large{
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .download-button{
+    display:inline-block;
+    cursor:pointer;
+    padding:12px 24px;
+    font-size: 20px;
+    margin-top: 8px;
+    background-color: #7046E7;
+    border-radius: 10px;
+    &:hover{
+      opacity: 80%;
+    }
+  }
 }
