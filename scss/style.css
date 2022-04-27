@@ -22,14 +22,52 @@ a {
   background-color: #252525;
   color: white;
 }
-#nav .right {
+@media (max-width: 500px) {
+  #nav #nav-large {
+    display: none;
+  }
+}
+#nav #nav-large .right {
   display: flex;
   position: absolute;
   top: 15px;
   right: 2%;
   gap: 30px;
 }
+#nav #nav-small {
+  display: none;
+}
+@media (max-width: 500px) {
+  #nav #nav-small {
+    display: block;
+  }
+}
 #nav .nav-button:hover {
+  color: blue;
+}
+
+#sidebar {
+  display: none;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 100%;
+  position: fixed !important;
+  z-index: 1;
+  padding: 8px 16px;
+  text-align: left;
+  animation: animateleft 0.4s;
+}
+@media (min-width: 600px) {
+  #sidebar {
+    display: none !important;
+  }
+}
+#sidebar .nav-button {
+  display: inline-block;
+  padding: 8px 16px;
+}
+#sidebar .nav-button:hover {
   color: blue;
 }
 

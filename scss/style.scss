@@ -27,13 +27,29 @@ a{
   background-color:  rgb(37, 37, 37);
   color: white;
 
-  .right{
-    display: flex;
-    position: absolute;
-    top: 15px;
-    right: 2%;
-    gap: 30px;
+  #nav-large{
+    @include small{
+      display: none;
+    }
+
+    .right{
+      display: flex;
+      position: absolute;
+      top: 15px;
+      right: 2%;
+      gap: 30px;
+    }
+  
+   
   }
+
+  #nav-small{
+    display: none;
+    @include small{
+      display: block;
+    }
+  }
+
 
   .nav-button{
     &:hover{
@@ -41,6 +57,29 @@ a{
     }
   }
 
+}
+
+
+#sidebar{
+  display: none;
+  background-color: black;
+  color: white;
+  width:200px;
+  height: 100%;
+  position:fixed!important;
+  z-index:1;
+  padding:8px 16px;text-align:left;
+
+  animation:animateleft 0.4s;
+  @include getbigger{
+    display: none!important;
+  }
+  .nav-button{
+    display:inline-block;padding:8px 16px;
+    &:hover{
+      color: blue;
+    }
+  }
 }
 
 // HEADER
