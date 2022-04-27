@@ -8,14 +8,24 @@
 
 html, body{
   scroll-behavior: smooth;
-  background-color: rgb(56, 56, 56);
+  background-color: $medium-gray;
   height: 100%;
+  font-family:"Trebuchet MS", sans-serif;
 }
 
 a{
   text-decoration:none;
+  color: $white;
+  
 }
 
+p{
+  color: $gray-text;
+}
+
+h3{
+  margin-bottom: 10px;
+}
 
 // NAV
 #nav{
@@ -25,7 +35,7 @@ a{
   top:0;
   padding: 15px;
   background-color:  rgb(37, 37, 37);
-  color: white;
+  color: $white;
 
   #nav-large{
     @include small{
@@ -36,11 +46,10 @@ a{
       display: flex;
       position: absolute;
       top: 15px;
-      right: 2%;
+      right: 5%;
       gap: 30px;
     }
   
-   
   }
 
   #nav-small{
@@ -53,17 +62,16 @@ a{
 
   .nav-button{
     &:hover{
-      color: blue;
+      color: $color-primary;
     }
   }
 
 }
 
-
 #sidebar{
   display: none;
   background-color: black;
-  color: white;
+  color: $white;
   width:200px;
   height: 100%;
   position:fixed!important;
@@ -77,7 +85,7 @@ a{
   .nav-button{
     display:inline-block;padding:8px 16px;
     &:hover{
-      color: blue;
+      color: $color-primary;
     }
   }
 }
@@ -86,12 +94,10 @@ a{
 
 header{
   position:relative;
-  background-color: rgb(54, 54, 54);
+  background-color: $light-gray;
   height: 100%;
-
   #div-header{
     padding:60px;
-    color: white;
     position:absolute;
     top:50%;
     left:0%;
@@ -100,7 +106,8 @@ header{
     
     .p-big{
       font-size: 55px;
-      font-weight: 900;
+      font-weight: 900;    
+      color: $white;
       @include medium{
         font-size: 35px;
       }
@@ -108,20 +115,21 @@ header{
 
     .p-small{
       font-size: 20px;
+      color: $white;
       @include medium{
         font-size: 17px;
       }
     }
     
-
     .download-button{
       display:inline-block;
       cursor:pointer;
       padding:12px 24px;
       font-size:18px;
       margin-top: 10px;
-      background-color: #7046E7;
+      background-color: $color-primary;
       border-radius: 10px;
+      color: $white;
       &:hover{
         opacity: 80%;
       }
@@ -142,9 +150,9 @@ header{
 
 // ABOUT 
 #about{
-  background-color:rgb(37, 37, 37);
-  color: white;
-  h3{
+  background-color:$medium-gray;
+  color: $white;
+  h2{
     text-align:center;
     margin-bottom: 60px;
   }
@@ -175,53 +183,9 @@ header{
 
 }
 
-
-// FONCTIONS 
-#fonctions{
-  background-color:rgb(49, 49, 49);
-  color: white;
-  h3{
-    text-align:center;
-    margin-bottom: 60px;
-  }
-  
-  .div-content{
-    display: flex;
-    margin: 0 auto;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 70px;
-  }
-
-  .each-content{
-    padding: 15px;
-    width: 15%;
-    min-width: 200px;
-    border-bottom: 2px solid rgb(83, 83, 83);
-  }
-
-  .center{
-    justify-content: center;
-    text-align: center;
-  }
-  /*
-  .download-button{
-    cursor:pointer;
-    padding:12px 20px;
-    background-color: #7046E7;
-    border-radius: 10px;
-    &:hover{
-      opacity: 80%;
-    }
-  }
-  */
-
-}
-
-
-
 #other{
+  background-color: $dark-gray;
+  color: $white;
   .div-other{
     display: flex;
     margin: 0 auto;
@@ -263,8 +227,9 @@ header{
     cursor:pointer;
     padding:12px 20px;
     margin-top: 8px;
-    background-color: #7046E7;
+    background-color: $color-primary;
     border-radius: 10px;
+    color: $white;
     &:hover{
       opacity: 80%;
     }
@@ -272,29 +237,66 @@ header{
 
 }
 
+// FONCTIONS 
+#fonctions{
+  background-color:$medium-gray;
+  color: $white;
+  h2{
+    text-align:center;
+    margin-bottom: 60px;
+  }
+  
+  .div-content{
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
 
-// FOOTER
-footer{
-  background-color: black;
-  display:inline-block;
-  width:auto;
-  text-align:center;
-  padding: 60px 0px;
-  width: 100%;
-  color: white;
+  .each-content{
+    padding: 15px;
+    width: 15%;
+    min-width: 100px;
+    border-bottom: 2px solid $color-primary-soft;
+    @include small{
+      width: 10%;
+    }
+  }
+
+  .center{
+    justify-content: center;
+    text-align: center;
+  }
+  /*
+  .download-button{
+    cursor:pointer;
+    padding:12px 20px;
+    background-color: $color-primary;
+    border-radius: 10px;
+    color: $white;
+    &:hover{
+      opacity: 80%;
+    }
+  }
+  */
+
 }
+
 
 // DOWNLOAD
 #download{
-  background-color: rgb(116, 116, 116);
+  background-color: $light-gray;
   width:auto;
   text-align:center;
   padding: 80px 0px;
   width: 100%;
-  color: white;
+  color: $white;
 
-  .large{
-    font-size: 24px;
+  .p-big{
+    font-size: 23px;
+    color: $white;
     margin-bottom: 30px;
   }
   .download-button{
@@ -303,10 +305,29 @@ footer{
     padding:12px 24px;
     font-size: 20px;
     margin-top: 8px;
-    background-color: #7046E7;
+    background-color: $color-primary;
     border-radius: 10px;
+    color: $white;
     &:hover{
       opacity: 80%;
     }
   }
 }
+
+
+
+// FOOTER
+footer{
+  background-color: $medium-gray;
+  display:inline-block;
+  width:auto;
+  text-align:center;
+  padding: 60px 0px;
+  width: 100%;
+  color: $white;
+  .p-big{
+    font-size: 20px;
+    color: $white;
+  }
+}
+

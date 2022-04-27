@@ -1,14 +1,10 @@
-$color-primary: #9c583f;
-$color-primary-lighter: #c58d78;
+$color-primary: #7046E7;
+$color-primary-soft:  #8675b6;
 
-$color-body: rgb(252, 247, 241);
+$medium-gray:rgb(37, 37, 37);
+$dark-gray: darken($medium-gray, 7%);;
+$light-gray: lighten($medium-gray, 10%);
 
-$color-darker-text: #473b33;
-$color-medium-text: lighten($color-darker-text, 4%);
-$color-lighter-text: lighten($color-darker-text, 8%);
+$gray-text: rgb(163, 163, 163);
 
-$beige: rgb(253, 239, 216);
-$light-green: rgb(211, 224, 164);
-
-$nav: #50290f;
-$nav-hover:#160a02;
+$white: white;

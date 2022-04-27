@@ -5,12 +5,22 @@
 
 html, body {
   scroll-behavior: smooth;
-  background-color: #383838;
+  background-color: #252525;
   height: 100%;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+p {
+  color: #a3a3a3;
+}
+
+h3 {
+  margin-bottom: 10px;
 }
 
 #nav {
@@ -31,7 +41,7 @@ a {
   display: flex;
   position: absolute;
   top: 15px;
-  right: 2%;
+  right: 5%;
   gap: 30px;
 }
 #nav #nav-small {
@@ -43,7 +53,7 @@ a {
   }
 }
 #nav .nav-button:hover {
-  color: blue;
+  color: #7046E7;
 }
 
 #sidebar {
@@ -68,17 +78,16 @@ a {
   padding: 8px 16px;
 }
 #sidebar .nav-button:hover {
-  color: blue;
+  color: #7046E7;
 }
 
 header {
   position: relative;
-  background-color: #363636;
+  background-color: #3f3f3f;
   height: 100%;
 }
 header #div-header {
   padding: 60px;
-  color: white;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -88,6 +97,7 @@ header #div-header {
 header #div-header .p-big {
   font-size: 55px;
   font-weight: 900;
+  color: white;
 }
 @media (max-width: 800px) {
   header #div-header .p-big {
@@ -96,6 +106,7 @@ header #div-header .p-big {
 }
 header #div-header .p-small {
   font-size: 20px;
+  color: white;
 }
 @media (max-width: 800px) {
   header #div-header .p-small {
@@ -110,6 +121,7 @@ header #div-header .download-button {
   margin-top: 10px;
   background-color: #7046E7;
   border-radius: 10px;
+  color: white;
 }
 header #div-header .download-button:hover {
   opacity: 80%;
@@ -128,7 +140,7 @@ header #div-header .download-button:hover {
   background-color: #252525;
   color: white;
 }
-#about h3 {
+#about h2 {
   text-align: center;
   margin-bottom: 60px;
 }
@@ -154,44 +166,10 @@ header #div-header .download-button:hover {
   font-size: 60px !important;
 }
 
-#fonctions {
-  background-color: #313131;
+#other {
+  background-color: #131313;
   color: white;
-  /*
-  .download-button{
-    cursor:pointer;
-    padding:12px 20px;
-    background-color: #7046E7;
-    border-radius: 10px;
-    &:hover{
-      opacity: 80%;
-    }
-  }
-  */
 }
-#fonctions h3 {
-  text-align: center;
-  margin-bottom: 60px;
-}
-#fonctions .div-content {
-  display: flex;
-  margin: 0 auto;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-#fonctions .each-content {
-  padding: 15px;
-  width: 15%;
-  min-width: 200px;
-  border-bottom: 2px solid #535353;
-}
-#fonctions .center {
-  justify-content: center;
-  text-align: center;
-}
-
 #other .div-other {
   display: flex;
   margin: 0 auto;
@@ -235,31 +213,67 @@ header #div-header .download-button:hover {
   margin-top: 8px;
   background-color: #7046E7;
   border-radius: 10px;
+  color: white;
 }
 #other .download-button:hover {
   opacity: 80%;
 }
 
-footer {
-  background-color: black;
-  display: inline-block;
-  width: auto;
-  text-align: center;
-  padding: 60px 0px;
-  width: 100%;
+#fonctions {
+  background-color: #252525;
   color: white;
+  /*
+  .download-button{
+    cursor:pointer;
+    padding:12px 20px;
+    background-color: $color-primary;
+    border-radius: 10px;
+    color: $white;
+    &:hover{
+      opacity: 80%;
+    }
+  }
+  */
+}
+#fonctions h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#fonctions .div-content {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#fonctions .each-content {
+  padding: 15px;
+  width: 15%;
+  min-width: 100px;
+  border-bottom: 2px solid #8675b6;
+}
+@media (max-width: 500px) {
+  #fonctions .each-content {
+    width: 10%;
+  }
+}
+#fonctions .center {
+  justify-content: center;
+  text-align: center;
 }
 
 #download {
-  background-color: #747474;
+  background-color: #3f3f3f;
   width: auto;
   text-align: center;
   padding: 80px 0px;
   width: 100%;
   color: white;
 }
-#download .large {
-  font-size: 24px;
+#download .p-big {
+  font-size: 23px;
+  color: white;
   margin-bottom: 30px;
 }
 #download .download-button {
@@ -270,9 +284,24 @@ footer {
   margin-top: 8px;
   background-color: #7046E7;
   border-radius: 10px;
+  color: white;
 }
 #download .download-button:hover {
   opacity: 80%;
+}
+
+footer {
+  background-color: #252525;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  padding: 60px 0px;
+  width: 100%;
+  color: white;
+}
+footer .p-big {
+  font-size: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
