@@ -23,6 +23,26 @@ h3 {
   margin-bottom: 10px;
 }
 
+.download-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 14px 26px;
+  font-size: 22px;
+  margin-top: 10px;
+  background-color: #7046E7;
+  border-radius: 10px;
+  color: white;
+}
+.download-button:hover {
+  opacity: 80%;
+}
+@media (max-width: 500px) {
+  .download-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+
 #nav {
   position: fixed;
   width: 100%;
@@ -118,19 +138,6 @@ header #div-header .p-small {
     font-size: 17px;
   }
 }
-header #div-header .download-button {
-  display: inline-block;
-  cursor: pointer;
-  padding: 14px 26px;
-  font-size: 22px;
-  margin-top: 10px;
-  background-color: #7046E7;
-  border-radius: 10px;
-  color: white;
-}
-header #div-header .download-button:hover {
-  opacity: 80%;
-}
 
 .container {
   padding: 100px 100px;
@@ -141,15 +148,15 @@ header #div-header .download-button:hover {
   }
 }
 
-#about {
+#apropos {
   background-color: #252525;
   color: white;
 }
-#about h2 {
+#apropos h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-#about .div-content {
+#apropos .div-content {
   text-align: center;
   display: flex;
   margin: 0 auto;
@@ -157,90 +164,64 @@ header #div-header .download-button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-#about .each-content {
+#apropos .each-content {
   padding: 15px;
   text-align: center;
   width: 20%;
   min-width: 200px;
 }
-#about .each-content p {
+#apropos .each-content p {
   text-align: center;
 }
-#about i {
+#apropos i {
   margin-bottom: 20px;
   font-size: 60px !important;
 }
 
-#other {
+#sert {
   background-color: #131313;
   color: white;
 }
-#other .div-other {
+#sert .div-sert {
   display: flex;
   margin: 0 auto;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-#other .each-content {
+#sert .each-content {
   padding: 15px;
   width: 40%;
   min-width: 200px;
 }
 @media (max-width: 500px) {
-  #other .each-content {
+  #sert .each-content {
     width: 100%;
   }
 }
-#other .each-content :nth-of-type(1) {
+#sert .each-content :nth-of-type(1) {
   margin: 20px 0px;
 }
-#other .each-content-img {
+#sert .each-content-img {
   padding: 15px;
   text-align: center;
   width: 40%;
   min-width: 200px;
 }
-#other .each-content-img img {
+#sert .each-content-img img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  #other .each-content-img {
+  #sert .each-content-img {
     display: none;
   }
-}
-#other .download-button {
-  display: inline-block;
-  cursor: pointer;
-  padding: 14px 22px;
-  font-size: 20px;
-  margin-top: 8px;
-  background-color: #7046E7;
-  border-radius: 10px;
-  color: white;
-}
-#other .download-button:hover {
-  opacity: 80%;
 }
 
 #fonctions {
   background-color: #252525;
   color: white;
-  /*
-  .download-button{
-    cursor:pointer;
-    padding:14px 22px;
-    font-size: 20px;
-    background-color: $color-primary;
-    border-radius: 10px;
-    color: $white;
-    &:hover{
-      opacity: 80%;
-    }
-  }
-  */
 }
 #fonctions h2 {
   text-align: center;
@@ -256,7 +237,7 @@ header #div-header .download-button:hover {
 }
 #fonctions .each-content {
   padding: 15px;
-  width: 15%;
+  width: 20%;
   min-width: 100px;
   border-bottom: 2px solid #8675b6;
 }
@@ -283,29 +264,16 @@ header #div-header .download-button:hover {
   color: white;
   margin-bottom: 30px;
 }
-#download .download-button {
-  display: inline-block;
-  cursor: pointer;
-  padding: 16px 24px;
-  font-size: 22px;
-  margin-top: 8px;
-  background-color: #7046E7;
-  border-radius: 10px;
-  color: white;
-}
-#download .download-button:hover {
-  opacity: 80%;
-}
 
-#team {
+#contact {
   background-color: #252525;
   color: white;
 }
-#team h2 {
+#contact h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-#team .div-content {
+#contact .div-content {
   text-align: center;
   display: flex;
   margin: 0 auto;
@@ -313,19 +281,19 @@ header #div-header .download-button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-#team a:hover {
+#contact a:hover {
   color: #7046E7;
 }
-#team .each-content {
+#contact .each-content {
   padding: 15px;
   text-align: center;
   width: 40%;
   min-width: 200px;
 }
-#team .each-content p {
+#contact .each-content p {
   text-align: center;
 }
-#team i {
+#contact i {
   margin-bottom: 20px;
   font-size: 60px !important;
 }
@@ -342,6 +310,9 @@ footer {
 footer .p-big {
   font-size: 20px;
   color: white;
+}
+footer a:hover {
+  color: #7046E7;
 }
 
 /*# sourceMappingURL=style.css.map */
