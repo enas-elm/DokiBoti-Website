@@ -3,7 +3,7 @@
 We've made a discord bot for schools. 💻
 
 This is a website made with HTML/CSS Sass to present our team's project.
-You can visit it on --> https://enas-elm.github.io/DokiBoti-Website/
+You can visit it on --> https://doki-boti-website-flame.vercel.app/
 
 
 Go on this link to install the bot --> https://github.com/joannemas/DokiBoti <br /><br />
