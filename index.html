@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="scss/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DokiBoti</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,9 +18,10 @@
     <div id="nav-large">
       <a href="#home" class="nav-button">DokiBoti</a>
       <div class="right">
-        <a href="#about" class="nav-button">ABOUT</a>
-        <a href="#other" class="nav-button">PLUS</a>
+        <a href="#apropos" class="nav-button">À PROPOS</a>
+        <a href="#sert" class="nav-button">À QUOI SERT-IL ?</a>
         <a href="#fonctions" class="nav-button">FONCTIONNALITES</a>
+        <a href="#contact" class="nav-button">CONTACT</a>
       </div>
     </div>
 
@@ -33,9 +34,10 @@
 <!-- Sidebar on small screen-->
 <nav id="sidebar" >
   <a onclick="hide()" class="nav-button"><i class="fa fa-window-close"></i></a><br>
-  <a href="#about" onclick="hide()" class="nav-button">ABOUT</a><br>
-  <a href="#other" onclick="hide()" class="nav-button">PLUS</a><br>
+  <a href="#apropos" onclick="hide()" class="nav-button">À PROPOS</a><br>
+  <a href="#sert" onclick="hide()" class="nav-button">À QUOI SERT-IL ?</a><br>
   <a href="#fonctions" onclick="hide()" class="nav-button">FONCTIONNALITÉS</a>
+  <a href="#contact" onclick="hide()" class="nav-button">CONTACT</a>
 </nav>
 
 
@@ -47,52 +49,48 @@
   <div id="div-header">
     <p class="p-big">DokiBoti</p><br>
     <p class="p-small">Le bot discord qui simplifie la vie des enseignants et d'étudiants !</p>
-    <p><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
+    <p><a href="https://github.com/joannemas/DokiBoti" class="download-button">Ajouter à mon serveur</a></p>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </div> 
 </header>
 
-<!-- ABOUT -->
-<div class="container" id="about">
-  <h2>ABOUT THE COMPANY</h2>
+<!-- apropos -->
+<div class="container" id="apropos">
+  <h2>À PROPOS</h2>
   <div class="div-content">
 
     <div class="each-content">
-      <i class="fa fa-diamond"></i>
-      <h3>Responsive</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <i class="fa fa-group"></i>
+      <h3>Fait pour tous !</h3>
+      <p>Que vous soyez enseignants ou étudiants, on a penser à vous</p>
+    </div>
+
+
+    <div class="each-content">
+      <i class="fa fa-fast-forward"></i>
+      <h3>Rapidité</h3>
+      <p>Ne perdez plus de temps à configurez votre serveur dans les pararmètres, faites le avec les commandes !</p>
     </div>
 
     <div class="each-content">
-      <i class="fa fa-diamond"></i>
-      <h3>Passion</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-
-    <div class="each-content">
-      <i class="fa fa-diamond"></i>
-      <h3>Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-
-    <div class="each-content">
-      <i class="fa fa-cog"></i>
-      <h3>Support</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <i class="fa fa-thumbs-o-up"></i>
+      <h3>Simplicité</h3>
+      <p>Des commandes simples à utiliser pour un bot simple !</p>
     </div>
 
   </div>
 </div>
 
 
-<!-- OTHER -->
-<div class="container" id="other">
+<!-- sert -->
+<div class="container" id="sert">
 
-  <div class="div-other">
+  <div class="div-sert">
 
       <div class="each-content">
-          <h2>ABOUT OTHER</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          <p><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
+          <h2>À QUOI SERT-IL ?</h2>
+          <p>DokiBoti est un bot discord d’enseignement. Il vous permettra de mieux gérer le serveur.</p>
+          <p><a href="https://github.com/joannemas/DokiBoti" class="download-button">Ajouter à mon serveur</a></p>
       </div>
   
       <div class="each-content-img">
@@ -108,40 +106,32 @@
   <div class="div-content">
 
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Modération des insultes pour un serveur paisible</p>
     </div>
 
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Lancer un chronomètre lors de devoirs</p>
     </div>
     
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Suivre les rendus de travail</p>
     </div>
 
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Ajouter et retirer des rôles</p>
     </div>
 
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Besoin d’inspiration ?  DokiBoti se transforme en écrivain</p>
     </div>
 
     <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    </div>
-
-    <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    </div>
-
-    <div class="each-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p>Créer vos propres channels</p>
     </div>
 
   </div>
   <!--
-  <p class="center"><a href="#about" class="download-button">Ajouter à mon serveur</a></p>
+  <p class="center"><a href="#apropos" class="download-button">Ajouter à mon serveur</a></p>
   -->
 </div>
 
@@ -149,37 +139,37 @@
   <!-- DOWNLOAD -->
 <div id="download">
   <p class="p-big">Ajoutez le maintenant à votre serveur</p>
-  <p><a href="#about" class="download-button">Télécharger</a></p>
+  <p><a href="https://github.com/joannemas/DokiBoti" class="download-button">Télécharger</a></p>
 </div>
 
 
-<!-- ABOUT -->
-<div class="container" id="team">
-  <h2>Rencontrez l'équipe</h2>
+<!-- apropos -->
+<div class="container" id="contact">
+  <h2>RENCONTREZ L'ÉQUIPE</h2>
   <div class="div-content">
 
     <div class="each-content">
       <h3>Thibaut François</h3>
-      <p>Mail :  <a href="mailto:enas.elmershati@gmail.com" title="Envoyez-moi un mail" rel="me" target="_blank"><b>enas.elmershati@gmail.com</b></a> <br>
-        Git : <a href="https://github.com/IDRAYNAR" target="_blank"><b> IDRAYNAR</b></a></p>
+      <p>Mail :  <a href="mailto:thibaut.francois@edu.devinci.fr" title="Envoyez-moi un mail" rel="me" target="_blank">thibaut.francois@edu.devinci.fr</a> <br>
+        Git : <a href="https://github.com/Vorn-Hagen" target="_blank">Vorn-Hagen</a></p>
    </div>
 
     <div class="each-content">
       <h3>Rayan Idri</h3>
-      <p>Mail :  <a href="mailto:rayan.idri@edu.devinci.fr" title="Envoyez-moi un mail" rel="me" target="_blank"><b>rayan.idri@edu.devinci.fr</b></a> <br>
-        Git : <a href="https://github.com/IDRAYNAR" target="_blank"><b> IDRAYNAR</b></a></p>
+      <p>Mail :  <a href="mailto:rayan.idri@edu.devinci.fr" title="Envoyez-moi un mail" rel="me" target="_blank">rayan.idri@edu.devinci.fr</a> <br>
+        Git : <a href="https://github.com/IDRAYNAR" target="_blank">IDRAYNAR</a></p>
     </div>
 
     <div class="each-content">
       <h3>Joanne Massillon</h3>
-      <p>Mail :  <a href="mailto:massillonjoanne@gmail.com" title="Envoyez-moi un mail" rel="me" target="_blank"><b>massillonjoanne@gmail.com</b></a> <br>
-        Git : <a href="https://github.com/joannemas" target="_blank"><b> joannemas</b></a></p>
+      <p>Mail :  <a href="mailto:massillonjoanne@gmail.com" title="Envoyez-moi un mail" rel="me" target="_blank">massillonjoanne@gmail.com</a> <br>
+        Git : <a href="https://github.com/joannemas" target="_blank">joannemas</a></p>
     </div>
 
     <div class="each-content">
       <h3>Enas El Mershati</h3>
-      <p>Mail :  <a href="mailto:enas.elmershati@gmail.com" title="Envoyez-moi un mail" rel="me" target="_blank"><b>enas.elmershati@gmail.com</b></a> <br>
-        Git : <a href="https://github.com/enas-elm" target="_blank"><b> enas-elm</b></a></p>
+      <p>Mail :  <a href="mailto:enas.elmershati@gmail.com" title="Envoyez-moi un mail" rel="me" target="_blank">enas.elmershati@gmail.com</a> <br>
+        Git : <a href="https://github.com/enas-elm" target="_blank">enas-elm</a></p>
     </div>
 
   </div>
@@ -191,7 +181,9 @@
  <!-- FOOTER -->
 <footer>
     <p class="p-big"><b>DokiBoti</b></p><br>
-    <p>By Rayan Idri, Thibaut François, Joanne Massilon, Enas EL Mershati</p>
+    <p> <a href="https://github.com/joannemas/DokiBoti" target="_blank">Lien Github</a> </p><br>
+    <p>IIM - Léonard de Vinci </p>
+    <p>By Thibaut François, Rayan Idri, Joanne Massilon, Enas EL Mershati</p>
 </footer>
 
 
