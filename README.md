@@ -3,9 +3,10 @@
 We've made a discord bot for schools. 💻
 
 This is a website made with HTML/CSS Sass to present our team's project.
+You can visit it on --> https://enas-elm.github.io/DokiBoti-Website/
 
 
-You can find the link of bot to install it --> https://github.com/joannemas/DokiBoti <br /><br />
+Go on this link to install the bot --> https://github.com/joannemas/DokiBoti <br /><br />
 
 
 
