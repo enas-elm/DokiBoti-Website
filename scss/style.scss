@@ -52,6 +52,7 @@ h3{
   z-index:1;
   top:0;
   padding: 15px;
+  border-bottom: solid gray;
   background-color:  rgb(37, 37, 37);
   color: blue !important;
 
@@ -199,6 +200,7 @@ header{
   color: $white;
   .div-sert{
     display: flex;
+    align-items: center;
     margin: 0 auto;
     gap: 20px;
     flex-wrap: wrap;
@@ -254,6 +256,8 @@ header{
   }
 
   .each-content{
+    display: flex;
+    align-items: center;
     text-align: center;
     padding: 15px;
     width: 20%;

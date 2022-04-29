@@ -51,6 +51,7 @@ h3 {
   z-index: 1;
   top: 0;
   padding: 15px;
+  border-bottom: solid gray;
   background-color: #252525;
   color: blue !important;
 }
@@ -218,6 +219,9 @@ header #div-header .p-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   gap: 20px;
   -ms-flex-wrap: wrap;
@@ -287,6 +291,12 @@ header #div-header .p-small {
 }
 
 #fonctions .each-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 15px;
   width: 20%;
