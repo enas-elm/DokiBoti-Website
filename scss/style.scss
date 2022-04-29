@@ -254,6 +254,7 @@ header{
   }
 
   .each-content{
+    text-align: center;
     padding: 15px;
     width: 20%;
     min-width: 100px;
@@ -349,3 +350,36 @@ footer{
   }
 }
 
+// Responsive settings
+@media only screen and (max-width: 600px) {
+  header {
+    height: 60%;
+    min-height: 0;
+    background-image: none;
+    background-color: #2e2f34;
+    #div-header {
+      padding: 15px;
+      text-align: center;
+      left: 0 !important;
+      p {
+        margin: 1%;
+      }
+    }
+  }
+  .container {
+    .div-sert {
+      .each-content {
+        text-align: center;
+      }
+    }
+  }
+  #fonctions {
+    .div-content {
+      text-align: center;
+      .each-content {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
